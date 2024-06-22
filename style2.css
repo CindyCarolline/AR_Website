@@ -30,8 +30,8 @@ nav {
     background: linear-gradient(to left, #5c98ff, #ff5fcf);
     color: white;
     font-weight: bold;
-    font-size: 2.5rem;
-    padding: 10px;
+    font-size: 5rem;
+    padding: 50px;
     margin: 30px auto;
     border: none;
     width: 100%;
@@ -80,7 +80,7 @@ nav {
 }
 
 h1 {
-    font-size: 12rem;
+    font-size: 10rem;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -98,9 +98,10 @@ h3 {
 p {
     text-align: justify;
     border: navy solid 10px;
+    display: flex;
     border-radius: 0;
     padding: 10px;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 h1, h2, h3, p {
