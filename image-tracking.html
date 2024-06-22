@@ -5,7 +5,32 @@
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
     </head>
+    <style>
+        .btn-back {
+            display: block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(to left, #5c98ff, #ff5fcf);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            font-size: 1rem;
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .btn-back:hover {
+            background: linear-gradient(to right, #5f74ff, #7bfec1);
+            color:black;
+        }
+    </style>
     <body>
+        <a href="website.html" class="btn-back">Back</a>
         <a-scene mindar-image="imageTargetSrc: ./targets/targets1.mind; maxTrack: 10" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
             <a-asset-item id="bullpuppyModel" src="./assets/bullpuppy/scene.gltf"></a-asset-item>
@@ -71,7 +96,6 @@
                 <a-image scale="2 1.25" src="#skatebull"></a-image>
                 <a-gltf-model rotation="90 0 0" position="0.15 -0.25 0.3" scale="0.75 0.75 0.75" src="#skatebullModel" animation-mixer>
             </a-entity>
-
         </a-scene>
     </body>
 </html>
