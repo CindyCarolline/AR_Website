@@ -2,7 +2,7 @@
 <html>
 <body>
     <div>
-        <a href="website.html"></a>
+        <a href="index.html"></a>
     </div>
 </body>
 </html>
